@@ -1,0 +1,6 @@
+product=1
+n=int(input())
+l=[float(input()) for i in range(n)]
+for ele in l:
+    product*=ele
+print(f"The product of the numbers is: {product:.2f}")
