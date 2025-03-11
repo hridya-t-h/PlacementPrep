@@ -1,0 +1,15 @@
+s=input()
+current_chairs = 0
+max_chairs = 0
+
+for ele in s:
+    if ele == 'C' or ele == 'U': 
+        if current_chairs < max_chairs:
+            current_chairs += 1
+        else:
+            max_chairs += 1
+            current_chairs += 1
+    elif ele == 'R' or ele == 'L': 
+        current_chairs -= 1
+
+print(max_chairs)
